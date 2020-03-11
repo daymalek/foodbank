@@ -16,4 +16,5 @@ Route::get('/', function () {
 }) ->name('home');
 
 Route::get('/register', 'EmployeeController@register')->name('employees.register');
+Route::post('/register', 'EmployeeController@postRegistration')->name('employees.registration');
 

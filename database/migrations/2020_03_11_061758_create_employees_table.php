@@ -22,7 +22,7 @@ class CreateEmployeesTable extends Migration
             $table->string('role');
            
             $table->timestamps();
-            $table->timestamp('email_verified_at')->nullable();
+           
             
         });
     }
@@ -34,6 +34,6 @@ class CreateEmployeesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('employees');
+        Schema::dropIfExists('employee');
     }
 }
